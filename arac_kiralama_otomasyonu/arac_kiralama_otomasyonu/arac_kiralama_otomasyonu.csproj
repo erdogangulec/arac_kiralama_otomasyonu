@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D13D55B3-3BF7-47DC-8379-7EE100B85772}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>arac_kiralama_otomasyonu</RootNamespace>
+    <AssemblyName>arac_kiralama_otomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminGiris.Designer.cs">
+      <DependentUpon>adminGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AracKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AracKayit.Designer.cs">
+      <DependentUpon>AracKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AracListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AracListele.Designer.cs">
+      <DependentUpon>AracListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullanici-admin_giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullanici-admin_giris.Designer.cs">
+      <DependentUpon>kullanici-admin_giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciAracListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciAracListele.Designer.cs">
+      <DependentUpon>KullaniciAracListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciMenu.Designer.cs">
+      <DependentUpon>KullaniciMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciSozlesmeListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciSozlesmeListele.Designer.cs">
+      <DependentUpon>KullaniciSozlesmeListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriEkle.Designer.cs">
+      <DependentUpon>MusteriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriListele.Designer.cs">
+      <DependentUpon>MusteriListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Satislar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Satislar.Designer.cs">
+      <DependentUpon>Satislar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sozlesme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sozlesme.Designer.cs">
+      <DependentUpon>Sozlesme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YeniKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniKayit.Designer.cs">
+      <DependentUpon>YeniKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yetkilendirme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yetkilendirme.Designer.cs">
+      <DependentUpon>Yetkilendirme.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminGiris.resx">
+      <DependentUpon>adminGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AracKayit.resx">
+      <DependentUpon>AracKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AracListele.resx">
+      <DependentUpon>AracListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullanici-admin_giris.resx">
+      <DependentUpon>kullanici-admin_giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciAracListele.resx">
+      <DependentUpon>KullaniciAracListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciMenu.resx">
+      <DependentUpon>KullaniciMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciSozlesmeListele.resx">
+      <DependentUpon>KullaniciSozlesmeListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriEkle.resx">
+      <DependentUpon>MusteriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriListele.resx">
+      <DependentUpon>MusteriListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Satislar.resx">
+      <DependentUpon>Satislar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sozlesme.resx">
+      <DependentUpon>Sozlesme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniKayit.resx">
+      <DependentUpon>YeniKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yetkilendirme.resx">
+      <DependentUpon>Yetkilendirme.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giris_arkaplan.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
